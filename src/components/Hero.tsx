@@ -1,16 +1,13 @@
 const Hero = () => {
     return (
         <section className="relative h-screen w-full flex items-center justify-center overflow-hidden pt-24">
-            {/* Video Background */}
-            <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                className="absolute top-0 left-0 w-full h-full object-cover z-0"
-            >
-                <source src="/aph.mp4" type="video/mp4" />
-            </video>
+            {/* Background Image - Using high-quality party image */}
+            <div 
+                className="absolute top-0 left-0 w-full h-full bg-cover bg-center z-0"
+                style={{
+                    backgroundImage: "url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1920&q=80')",
+                }}
+            ></div>
 
             {/* Overlay */}
             <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10"></div>
