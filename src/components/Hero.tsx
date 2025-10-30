@@ -1,13 +1,16 @@
 const Hero = () => {
     return (
         <section className="relative h-screen w-full flex items-center justify-center overflow-hidden pt-24">
-            {/* Background Image - Using high-quality party image */}
-            <div 
-                className="absolute top-0 left-0 w-full h-full bg-cover bg-center z-0"
-                style={{
-                    backgroundImage: "url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=1920&q=80')",
-                }}
-            ></div>
+            {/* Video Background */}
+            <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="absolute top-0 left-0 w-full h-full object-cover z-0"
+            >
+                <source src="https://res.cloudinary.com/dgo3wykbm/video/upload/v1761831474/aph_vugajs.mp4" type="video/mp4" />
+            </video>
 
             {/* Overlay */}
             <div className="absolute top-0 left-0 w-full h-full bg-black/60 z-10"></div>
@@ -15,7 +18,7 @@ const Hero = () => {
             {/* Content */}
             <div className="relative text-center text-white z-20 px-8 max-w-5xl">
                 <p className="font-cursive text-3xl md:text-4xl font-normal italic mb-6 tracking-wide animate-fadeInDown drop-shadow-lg">
-                    Since 2022
+                    Celebrating Three Years Of Excellence In Party Planning
                 </p>
                 <h1 className="font-serif text-5xl md:text-7xl font-semibold tracking-wider mb-4 animate-fadeInUp drop-shadow-lg">
                     Welcome to
