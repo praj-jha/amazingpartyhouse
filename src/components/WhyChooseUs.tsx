@@ -9,14 +9,14 @@ const WhyChooseUs = () => {
                     <div className="w-24 h-1 bg-[#D4AF37] mx-auto"></div>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Left side - Image with decoration */}
                     <div className="relative order-2 lg:order-1">
                         <div className="relative z-10">
                             <img
-                                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600"
+                                src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=800"
                                 alt="Party decoration"
-                                className="w-full max-w-md mx-auto border-8 border-[#D4AF37] shadow-2xl rounded-lg"
+                                className="w-full h-[500px] object-cover border-8 border-[#D4AF37] shadow-2xl rounded-lg"
                             />
                         </div>
                         {/* Decorative elements */}
