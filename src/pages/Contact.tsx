@@ -52,7 +52,7 @@ const Contact = () => {
                                     <div>
                                         <h3 className="font-sans font-semibold text-primary mb-2">Phone</h3>
                                         <a href="tel:+918306906623" className="font-sans text-primary/80 hover:text-primary-gold transition-colors">
-                                            +91 8306906623
+                                            +1 407921-6454
                                         </a>
                                     </div>
                                 </div>
@@ -62,7 +62,7 @@ const Contact = () => {
                                     <div>
                                         <h3 className="font-sans font-semibold text-primary mb-2">Email</h3>
                                         <a href="mailto:Himanshu@infinityhospitality.co.in" className="font-sans text-primary/80 hover:text-primary-gold transition-colors">
-                                            Himanshu@infinityhospitality.co.in
+                                            info@amazingpartyhouse.com
                                         </a>
                                     </div>
                                 </div>
@@ -72,7 +72,7 @@ const Contact = () => {
                                     <div>
                                         <h3 className="font-sans font-semibold text-primary mb-2">Location</h3>
                                         <p className="font-sans text-primary/80">
-                                            Serving clients across India
+                                            Serving clients across united states
                                         </p>
                                     </div>
                                 </div>
