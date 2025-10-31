@@ -9,9 +9,6 @@ const Footer = () => {
                 <div>
                     <Link to="/" className="flex items-center gap-3 mb-6">
                         <img src="/logo.png" alt="Amazing Party House" className="h-14 w-auto" />
-                        <div className="font-serif text-lg font-bold tracking-wide text-[#2C1810]">
-                            AMAZING PARTY HOUSE
-                        </div>
                     </Link>
                     <p className="font-sans text-sm leading-relaxed text-gray-700">
                         For the past three years, Amazing Party House has been dedicated to creating unforgettable celebrations with unparalleled expertise and creativity.
@@ -55,8 +52,8 @@ const Footer = () => {
                     <div className="space-y-4 mt-6">
                         <div className="flex items-center gap-3 bg-gray-50 p-3 rounded-lg hover:bg-[#D4AF37]/10 transition-colors">
                             <FaPhone className="text-[#D4AF37] text-lg" />
-                            <a href="tel:+918306906623" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors">
-                                +91 8882912625
+                            <a href="tel:+1 407921-6454" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors">
+                                +1 407921-6454
                             </a>
                         </div>
                         <div className="flex items-center gap-3 bg-gray-50 p-3 rounded-lg hover:bg-[#D4AF37]/10 transition-colors">

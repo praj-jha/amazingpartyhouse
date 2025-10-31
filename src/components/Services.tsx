@@ -2,25 +2,34 @@ import { FaCircle } from 'react-icons/fa';
 
 const Services = () => {
     const servicesLeft = [
-        'THEMED BIRTHDAY PARTIES',
-        'KIDS PARTY ENTERTAINMENT',
-        'MILESTONE CELEBRATIONS',
-        'KITTY PARTIES & LADIES GATHERINGS',
-        'ADVENTURE ACTIVITIES',
-        'FOOD & BEVERAGE CATERING',
-        'EVENT DECORATION & STYLING',
-        'MUSIC & DJ SERVICES'
+        'HOLIDAY PARTIES',
+        'CORPORATE EVENTS',
+        'BIRTHDAY PARTIES',
+        'BAT & BAR MITZVAHS',
+        'QUINCEANERAS',
+        'WEDDINGS',
+        'DESTINATION WEDDINGS',
+        'ANNIVERSARY PARTY',
+        'GRADUATION PARTIES',
+        'ENGAGEMENT PARTIES',
+        'REHEARSAL DINNERS',
+        'NETWORKING EVENTS',
+        'ALUMNI EVENTS'
     ];
 
     const servicesRight = [
-        'MEN\'S PARTY EVENTS',
-        'ANNIVERSARY CELEBRATIONS',
-        'PHOTO & VIDEO COVERAGE',
-        'PARTY VENUE ARRANGEMENTS',
-        'CAKE & DESSERT SERVICES',
-        'BALLOON DECORATION',
-        'PARTY SUPPLIES & PROPS',
-        'GAMES & ACTIVITIES'
+        'SUMMER CAMPS',
+        'FIELD TRIPS',
+        'YOUTH GROUP EVENTS',
+        'FUNDRAISERS',
+        'SPORTS BANQUETS',
+        'THEME EVENTS',
+        'KIDS EVENTS',
+        'BOUNCE RENTALS',
+        'TENTS AND CHAIRS',
+        'FACE PAINTING',
+        'FESTIVALS',
+        'POOJAS & HAVANS'
     ];
 
     return (
