@@ -16,6 +16,7 @@ const Advantages = () => {
                         Ignite The Night - #1
                     </h2>
                     <p className="mt-1 text-sm text-[#6B5D4F]">Whiskey & Cigar Night</p>
+                    <p className="mt-2 text-sm font-medium text-[#D4AF37]">Amazing Party House In collaboration with Masala Mantra</p>
                 </div>
 
                 {/* Two-column layout: left text, right image - balanced columns on large screens */}
@@ -33,7 +34,7 @@ const Advantages = () => {
 
                         <div className="space-y-3 text-[#3A2A22]">
                             <p className="font-sans text-base sm:text-lg leading-relaxed">
-                                Get Ready to Light Up the Night with APH's First "IGNITE THE NIGHT" Event - It's going to be a BLAST! Limited Space - Event Will be SOLD OUT
+                                Get Ready to Light Up the Night with "IGNITE THE NIGHT" - Whiskey & Cigar! Men's 21+ only. Save Your Spot. This Event Will be SOLD OUT
                             </p>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-6 gap-y-2 text-sm">
                                 <div><span className="font-semibold">Venue:</span> Masala Mantra</div>
