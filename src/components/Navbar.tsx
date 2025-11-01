@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaInstagram } from 'react-icons/fa';
 import { FiMenu, FiX, FiChevronDown } from 'react-icons/fi';
 
 const Navbar = () => {
