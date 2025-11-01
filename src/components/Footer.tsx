@@ -52,8 +52,8 @@ const Footer = () => {
                     <div className="space-y-4 mt-6">
                         <div className="flex items-center gap-3 bg-gray-50 p-3 rounded-lg hover:bg-[#D4AF37]/10 transition-colors">
                             <FaPhone className="text-[#D4AF37] text-lg" />
-                            <a href="tel:+1 407921-6454" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors">
-                                +1 407921-6454
+                            <a href="tel:+1 407-921-6454" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors">
+                                +1 407-921-6454
                             </a>
                         </div>
                         <div className="flex items-center gap-3 bg-gray-50 p-3 rounded-lg hover:bg-[#D4AF37]/10 transition-colors">
