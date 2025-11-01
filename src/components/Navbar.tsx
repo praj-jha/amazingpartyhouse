@@ -31,7 +31,7 @@ const Navbar = () => {
                     {/* Desktop Navigation - Centered Logo Layout */}
                     <div className="hidden md:flex items-center justify-between">
                         {/* Left Navigation */}
-                        <ul className="flex gap-6 lg:gap-8 items-center list-none">
+                        <ul className="flex gap-5 lg:gap-7 items-center list-none">
                             <li>
                                 <Link
                                     to="/"
@@ -49,15 +49,16 @@ const Navbar = () => {
                                 </Link>
                             </li>
                             <li
-                                className="relative"
+                                className="relative group"
                                 onMouseEnter={() => setShowDropdown(true)}
                                 onMouseLeave={() => setShowDropdown(false)}
                             >
                                 <span className="font-sans text-sm font-semibold tracking-wider text-[#2C1810] hover:text-[#D4AF37] transition-colors cursor-pointer py-2 flex items-center gap-1">
                                     SERVICES
+                                    <FiChevronDown className="text-[#D4AF37]" size={16} />
                                 </span>
                                 {showDropdown && (
-                                    <div className="absolute top-full left-0 bg-white min-w-[280px] max-h-[500px] overflow-y-auto shadow-xl mt-2 border-2 border-[#D4AF37] rounded-md">
+                                    <div className="absolute top-full left-0 bg-white min-w-[280px] max-h-[500px] overflow-y-auto shadow-xl mt-0 border-2 border-[#D4AF37] rounded-md">
                                         <Link to="/services/holiday-parties" className="block px-6 py-3 font-sans text-sm tracking-wide text-[#2C1810] hover:bg-[#D4AF37] hover:text-white transition-all">
                                             Holiday Parties
                                         </Link>
@@ -144,7 +145,15 @@ const Navbar = () => {
                         </Link>
 
                         {/* Right Navigation */}
-                        <ul className="flex gap-6 lg:gap-8 items-center list-none">
+                        <ul className="flex gap-5 lg:gap-7 items-center list-none">
+                            <li>
+                                <Link
+                                    to="/testimonials"
+                                    className="font-sans text-sm font-semibold tracking-wider text-[#2C1810] hover:text-[#D4AF37] transition-colors py-2"
+                                >
+                                    TESTIMONIALS
+                                </Link>
+                            </li>
                             <li>
                                 <Link
                                     to="/gallery"
@@ -210,6 +219,7 @@ const Navbar = () => {
                                 </div>
                             )}
 
+                            <Link onClick={() => setMobileOpen(false)} to="/testimonials" className="block px-2 py-3 text-[#2C1810] font-medium tracking-wide">TESTIMONIALS</Link>
                             <Link onClick={() => setMobileOpen(false)} to="/gallery" className="block px-2 py-3 text-[#2C1810] font-medium tracking-wide">GALLERY</Link>
                             <Link onClick={() => setMobileOpen(false)} to="/contact" className="block px-2 py-3 text-[#2C1810] font-medium tracking-wide">CONTACT</Link>
                         </div>
