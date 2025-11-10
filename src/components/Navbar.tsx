@@ -17,7 +17,7 @@ const Navbar = () => {
                     {/* Mobile Header */}
                     <div className="md:hidden flex justify-between items-center">
                         <Link to="/" className="flex items-center">
-                            <img src="/logo.png" alt="Amazing Party House" className="h-12 w-auto" />
+                            <img src="/aph.png" alt="Amazing Party House" className="h-12 w-auto" />
                         </Link>
                         <button
                             className="p-2 rounded-md border border-[#D4AF37] text-[#2C1810]"
@@ -141,7 +141,7 @@ const Navbar = () => {
 
                         {/* Centered Logo */}
                         <Link to="/" className="absolute left-1/2 transform -translate-x-1/2 flex items-center">
-                            <img src="/logo.png" alt="Amazing Party House" className="h-14 lg:h-16 w-auto drop-shadow-md" />
+                            <img src="/aph.png" alt="Amazing Party House" className="h-20 lg:h-24 w-auto drop-shadow-md" />
                         </Link>
 
                         {/* Right Navigation */}

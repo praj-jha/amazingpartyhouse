@@ -32,6 +32,11 @@ const Footer = () => {
                             </Link>
                         </li>
                         <li>
+                            <Link to="/testimonials" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                                <span className="text-[#D4AF37]">›</span> Testimonials
+                            </Link>
+                        </li>
+                        <li>
                             <Link to="/gallery" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors flex items-center gap-2">
                                 <span className="text-[#D4AF37]">›</span> Gallery
                             </Link>
