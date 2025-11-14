@@ -63,8 +63,8 @@ const Footer = () => {
                         </div>
                         <div className="flex items-center gap-3 bg-gray-50 p-3 rounded-lg hover:bg-[#D4AF37]/10 transition-colors">
                             <FaEnvelope className="text-[#D4AF37] text-lg" />
-                            <a href="mailto:info@amazingpartyhouse.com" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors break-all">
-                                info@amazingpartyhouse.com
+                            <a href="mailto:hello@amazingpartyhouse.com" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors break-all">
+                                hello@amazingpartyhouse.com
                             </a>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ const Footer = () => {
             {/* Bottom decoration */}
             <div className="mt-12 pt-6 border-t border-gray-200">
                 <p className="text-center font-sans text-sm text-gray-600 tracking-wide">
-                    © 2025 Amazing Party House. All rights reserved.
+                    © 2022 - 2025 Amazing Party House. All rights reserved.
                 </p>
             </div>
         </footer>
