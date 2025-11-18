@@ -11,7 +11,7 @@ const Navbar = () => {
         <nav className="fixed top-0 left-0 right-0 z-50 shadow-md">
             {/* Main navbar - switched to dark background */}
             <div className="bg-[#2C1810] border-b-2 border-[#00000000]">
-                <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16 py-2 md:py-12">
+                <div className="max-w-screen-2xl mx-auto px-6 md:px-12 lg:px-16 py-2 md:py-10">
                     {/* Mobile Header */}
                     <div className="md:hidden flex justify-between items-center">
                         <Link to="/" className="flex items-center">
