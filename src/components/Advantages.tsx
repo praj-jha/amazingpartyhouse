@@ -20,7 +20,7 @@ const Advantages = () => {
                 </div>
 
                 {/* Two-column layout: left text, right image - balanced columns on large screens */}
-                <div className="bg-white rounded-2xl border border-[#E8E1D7] shadow-[0_10px_30px_rgba(0,0,0,0.06)] overflow-hidden grid grid-cols-1 lg:grid-cols-5 min-h-[500px] lg:min-h-[600px]">
+                <div className="bg-white rounded-2xl border border-[#E8E1D7] shadow-[0_10px_30px_rgba(0,0,0,0.06)] overflow-hidden grid grid-cols-1 lg:grid-cols-5 min-h-[650px] lg:min-h-[600px]">
                     {/* Left: details - takes 2 parts of 5 */}
                     <div className="lg:col-span-2 p-6 sm:p-8 order-2 lg:order-1 flex flex-col justify-center">
                         <div className="flex flex-wrap items-center gap-3 mb-5">
@@ -69,11 +69,11 @@ const Advantages = () => {
 
                     {/* Right: image - takes 3 parts of 5 for larger display */}
                     <div className="lg:col-span-3 order-1 lg:order-2 bg-[#F5F0E6]">
-                        <div className="aspect-4/3 lg:aspect-auto lg:h-full w-full">
+                        <div className="aspect-3/4 lg:aspect-auto lg:h-full w-full">
                             <img
-                                src="/cigar.jpeg"
+                                src="/party.jpeg"
                                 alt="Ignite The Night whiskey and cigar event"
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-contain"
                                 loading="lazy"
                                 decoding="async"
                             />

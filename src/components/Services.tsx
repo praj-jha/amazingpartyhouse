@@ -36,6 +36,7 @@ const Services = () => {
             description: "Creating magical memories for young ones",
             services: [
                 "Kids Birthday Parties",
+                "Sports Activities",
                 "Summer Camps",
                 "Field Trips",
                 "Youth Group Events",
@@ -54,7 +55,8 @@ const Services = () => {
                 "Festivals & Community Events",
                 "Holiday Celebrations",
                 "Theme Events",
-                "Private Parties"
+                "Private Parties",
+                "VIP Event"
             ]
         },
         {
@@ -76,6 +78,7 @@ const Services = () => {
                 "Tents & Canopies",
                 "Tables & Chairs",
                 "Decor & Lighting",
+                "DJs & Music",
                 "Sound & Entertainment Systems",
                 "Catering Services",
                 "Photography & Videography"

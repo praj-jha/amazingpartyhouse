@@ -21,9 +21,9 @@ const Hero = () => {
             <div className="relative z-20 px-6 md:px-8 w-full max-w-6xl flex flex-col items-center text-center text-white">
                 {/* Logo above text */}
                 <img
-                    src="/logo.png"
+                    src="/aphl.png"
                     alt="Amazing Party House"
-                    className="h-16 sm:h-20 md:h-24 lg:h-28 w-auto mb-8 md:mb-10 drop-shadow-[0_4px_20px_rgba(212,175,55,0.5)] animate-fadeInDown"
+                    className="h-32 sm:h-40 md:h-40 lg:h-52 w-auto drop-shadow-[0_4px_20px_rgba(212,175,55,0.5)] animate-fadeInDown"
                     loading="eager"
                     decoding="async"
                 />
@@ -31,7 +31,7 @@ const Hero = () => {
                 {/* Premium Content */}
                 <div className="space-y-4 md:space-y-5">
                     <p className="font-serif text-xs sm:text-sm md:text-base font-light italic tracking-[0.3em] uppercase text-white/90 animate-fadeInDown drop-shadow-lg">
-                        Celebrating Three Years Of Excellence
+                        Celebrating 3+ Years of Experience
                     </p>
                     <h1 className="font-serif text-sm sm:text-base md:text-xl lg:text-2xl font-extralight tracking-[0.35em] leading-tight mb-3 animate-fadeInUp drop-shadow-2xl uppercase">
                         Discover the Art of
@@ -41,7 +41,7 @@ const Hero = () => {
                     </h2>
                     <div className="h-px w-32 sm:w-40 md:w-48 mx-auto my-4 md:my-5 bg-linear-to-r from-transparent via-[#D4AF37] to-transparent opacity-60"></div>
                     <p className="font-sans text-xs sm:text-sm md:text-base font-light tracking-[0.25em] uppercase text-white/80 max-w-3xl mx-auto drop-shadow-md animate-fadeInUp">
-                        The Finest Events in United States
+                        The Finest Events Worldwide
                     </p>
                 </div>
             </div>

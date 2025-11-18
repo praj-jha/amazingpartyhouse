@@ -11,6 +11,7 @@ const Contact = () => {
         eventType: '',
         eventDate: '',
         guestCount: '',
+        referral: '',
         message: ''
     });
 
@@ -19,11 +20,11 @@ const Contact = () => {
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         setIsSubmitting(true);
-        
+
         // Simulate form submission
         setTimeout(() => {
             console.log('Form submitted:', formData);
-            alert('Thank you for your inquiry! We will get back to you within 24 hours.');
+            alert('Our experts will get back to you in 24h to plan your Amazing party');
             setFormData({
                 name: '',
                 email: '',
@@ -31,6 +32,7 @@ const Contact = () => {
                 eventType: '',
                 eventDate: '',
                 guestCount: '',
+                referral: '',
                 message: ''
             });
             setIsSubmitting(false);
@@ -55,23 +57,23 @@ const Contact = () => {
         {
             icon: <FaEnvelope className="text-2xl" />,
             title: "Email",
-            detail: "info@amazingpartyhouse.com",
-            link: "mailto:info@amazingpartyhouse.com",
+            detail: "hello@amazingpartyhouse.com",
+            link: "mailto:hello@amazingpartyhouse.com",
             subtitle: "Drop us a line"
         },
         {
             icon: <FaMapMarkerAlt className="text-2xl" />,
             title: "Location",
-            detail: "United States",
+            detail: "Worldwide",
             link: null,
             subtitle: "Serving nationwide"
         },
         {
             icon: <FaClock className="text-2xl" />,
             title: "Business Hours",
-            detail: "Mon - Sat: 9AM - 8PM",
+            detail: "Mon- Fri : 10 AM - 6 PM and Sat & Sun by Appointment",
             link: null,
-            subtitle: "Sunday by appointment"
+            subtitle: "By appointment on weekends"
         }
     ];
 
@@ -109,7 +111,7 @@ const Contact = () => {
                 <div className="max-w-7xl mx-auto px-6 md:px-8">
                     <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-32 relative z-10">
                         {contactInfo.map((info, index) => (
-                            <div 
+                            <div
                                 key={index}
                                 className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#D4AF37] text-center group hover:-translate-y-2"
                             >
@@ -125,7 +127,7 @@ const Contact = () => {
                                     {info.subtitle}
                                 </p>
                                 {info.link ? (
-                                    <a 
+                                    <a
                                         href={info.link}
                                         className="font-sans text-sm text-[#D4AF37] hover:text-[#b8941f] transition-colors font-medium"
                                     >
@@ -154,7 +156,7 @@ const Contact = () => {
                             <h3 className="font-serif text-3xl md:text-4xl text-[#2C1810] font-semibold tracking-wide mb-8">
                                 WE'D LOVE TO HEAR FROM YOU
                             </h3>
-                            
+
                             <p className="font-sans text-base text-gray-700 leading-relaxed mb-8">
                                 Ready to plan your dream event? Whether you have a detailed vision or need help bringing your ideas to life, our team is here to make it happen. Reach out today and let's start creating something extraordinary together.
                             </p>
@@ -169,7 +171,7 @@ const Contact = () => {
                                         <a href="tel:+14079216454" className="font-sans text-sm text-gray-600 hover:text-[#D4AF37] transition-colors">
                                             +1 407-921-6454
                                         </a>
-                                        <p className="font-sans text-xs text-gray-500 mt-1">Available Mon-Sat, 9AM-8PM</p>
+                                        <p className="font-sans text-xs text-gray-500 mt-1">Mon- Fri : 10 AM - 6 PM and Sat &amp; Sun by Appointment</p>
                                     </div>
                                 </div>
 
@@ -179,8 +181,8 @@ const Contact = () => {
                                     </div>
                                     <div>
                                         <h4 className="font-serif text-lg text-[#2C1810] font-semibold mb-1">Email Us</h4>
-                                        <a href="mailto:info@amazingpartyhouse.com" className="font-sans text-sm text-gray-600 hover:text-[#D4AF37] transition-colors break-all">
-                                            info@amazingpartyhouse.com
+                                        <a href="mailto:hello@amazingpartyhouse.com" className="font-sans text-sm text-gray-600 hover:text-[#D4AF37] transition-colors break-all">
+                                            hello@amazingpartyhouse.com
                                         </a>
                                         <p className="font-sans text-xs text-gray-500 mt-1">We'll respond within 24 hours</p>
                                     </div>
@@ -206,7 +208,7 @@ const Contact = () => {
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-2">
                                         <span className="text-[#D4AF37] mt-1">✓</span>
-                                        <span className="font-sans text-sm text-gray-600">3 Years of Excellence</span>
+                                        <span className="font-sans text-sm text-gray-600">3+ years of experience</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <span className="text-[#D4AF37] mt-1">✓</span>
@@ -231,7 +233,7 @@ const Contact = () => {
                                     REQUEST A CONSULTATION
                                 </h3>
                                 <p className="font-sans text-sm text-gray-600 mb-8">
-                                    Fill out the form below and we'll get back to you within 24 hours.
+                                    Our experts will get back to you in 24h to plan your Amazing party
                                 </p>
 
                                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -347,6 +349,26 @@ const Contact = () => {
                                                 <option value="300+">300+ guests</option>
                                             </select>
                                         </div>
+                                    </div>
+
+                                    <div className="mb-6">
+                                        <label htmlFor="referral" className="block font-sans text-sm font-semibold text-[#2C1810] mb-2 tracking-wide">
+                                            HOW DID YOU HEAR ABOUT US
+                                        </label>
+                                        <select
+                                            id="referral"
+                                            name="referral"
+                                            value={formData.referral}
+                                            onChange={handleChange}
+                                            className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-[#D4AF37] focus:outline-none transition-colors font-sans text-sm"
+                                        >
+                                            <option value="">Select an option</option>
+                                            <option value="google">Google</option>
+                                            <option value="instagram">Instagram</option>
+                                            <option value="facebook">Facebook</option>
+                                            <option value="friend">Friend / Family</option>
+                                            <option value="other">Other</option>
+                                        </select>
                                     </div>
 
                                     <div>

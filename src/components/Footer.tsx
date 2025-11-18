@@ -11,7 +11,7 @@ const Footer = () => {
                         <img src="/logo.png" alt="Amazing Party House" className="h-14 w-auto" />
                     </Link>
                     <p className="font-sans text-sm leading-relaxed text-gray-700">
-                        For the past three years, Amazing Party House has been dedicated to creating unforgettable celebrations with unparalleled expertise and creativity.
+                        For the past 3+ years, Amazing Party House has been dedicated to creating unforgettable celebrations with unparalleled expertise and creativity.
                     </p>
                 </div>
 

@@ -91,7 +91,7 @@ const About = () => {
                             <h3 className="font-serif text-3xl md:text-4xl text-[#2C1810] font-semibold tracking-wide mb-8">
                                 WHERE CELEBRATION MEETS PERFECTION
                             </h3>
-                            
+
                             <div className="space-y-6 font-sans text-base md:text-lg text-gray-700 leading-relaxed">
                                 <p>
                                     Welcome to <span className="font-semibold text-[#D4AF37]">Amazing Party House</span>, where we transform ordinary moments into extraordinary memories. For the past three years, we have been dedicated to creating unforgettable celebrations that reflect the unique vision and personality of each client.
@@ -172,7 +172,7 @@ const About = () => {
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         {values.map((value, index) => (
-                            <div 
+                            <div
                                 key={index}
                                 className="bg-linear-to-b from-white to-gray-50 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-[#D4AF37] group hover:-translate-y-2"
                             >
