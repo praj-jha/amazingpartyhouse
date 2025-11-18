@@ -195,7 +195,7 @@ const Contact = () => {
                                     <div>
                                         <h4 className="font-serif text-lg text-[#2C1810] font-semibold mb-1">Follow Us</h4>
                                         <p className="font-sans text-sm text-gray-600">
-                                            @amazingpartyhouse
+                                            @amazingparty.house
                                         </p>
                                         <p className="font-sans text-xs text-gray-500 mt-1">See our latest events</p>
                                     </div>
