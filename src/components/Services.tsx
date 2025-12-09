@@ -146,12 +146,26 @@ const Services = () => {
                     <p className="text-white/80 text-lg mb-6">
                         Don't see what you're looking for? We offer custom event planning tailored to your needs!
                     </p>
-                    <a
-                        href="/contact"
-                        className="inline-block bg-[#D4AF37] text-[#2C1810] font-semibold px-8 py-3 rounded-full hover:bg-[#E5C158] transition-all hover:scale-105 shadow-lg"
-                    >
-                        Get Custom Quote
-                    </a>
+                    <div className="flex flex-wrap gap-4 justify-center">
+                        <a
+                            href="https://calendar.app.google/3GTWW3UurwXyiyeo7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block group relative overflow-hidden"
+                        >
+                            <div className="relative px-8 py-3 bg-[#D4AF37] border-2 border-[#D4AF37] rounded-full transition-all duration-300 hover:bg-transparent hover:border-white">
+                                <span className="font-semibold text-[#2C1810] group-hover:text-white transition-colors">
+                                    Schedule a Call
+                                </span>
+                            </div>
+                        </a>
+                        <a
+                            href="/contact"
+                            className="inline-block bg-transparent border-2 border-[#D4AF37] text-[#D4AF37] font-semibold px-8 py-3 rounded-full hover:bg-[#D4AF37] hover:text-[#2C1810] transition-all hover:scale-105 shadow-lg"
+                        >
+                            Get Custom Quote
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>

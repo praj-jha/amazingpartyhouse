@@ -100,41 +100,53 @@ const Contact = () => {
                         CONTACT US
                     </h1>
                     <div className="w-32 h-px bg-[#D4AF37] mx-auto mb-8"></div>
-                    <p className="font-sans text-base md:text-lg text-white/90 tracking-[0.2em] uppercase animate-fadeInUp max-w-3xl mx-auto leading-relaxed">
-                        Let's Create Your Perfect Celebration
+                    <p className="font-sans text-base md:text-lg text-white/90 tracking-[0.15em] uppercase animate-fadeInUp mb-8">
+                        Let's Create Something Amazing Together
                     </p>
+
+                    {/* Quick Schedule CTA */}
+                    <div className="animate-fadeInUp">
+                        <a
+                            href="https://calendar.app.google/3GTWW3UurwXyiyeo7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-3 px-10 py-4 bg-[#D4AF37] text-[#2C1810] font-serif font-semibold tracking-wider rounded-full shadow-xl hover:shadow-2xl hover:bg-[#E5C158] transition-all duration-300 hover:scale-105"
+                        >
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>Schedule a Call Now</span>
+                        </a>
+                    </div>
                 </div>
             </section>
 
-            {/* Contact Info Cards */}
-            <section className="py-20 bg-linear-to-b from-white to-gray-50">
+            {/* Contact Info Section - positioned above form */}
+            <section className="py-16 bg-linear-to-br from-gray-50 to-white">
                 <div className="max-w-7xl mx-auto px-6 md:px-8">
-                    <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 -mt-32 relative z-10">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {contactInfo.map((info, index) => (
-                            <div
-                                key={index}
-                                className="bg-white p-8 rounded-xl shadow-xl hover:shadow-2xl transition-all duration-300 border-t-4 border-[#D4AF37] text-center group hover:-translate-y-2"
-                            >
-                                <div className="w-16 h-16 bg-[#D4AF37]/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-[#D4AF37] transition-colors">
-                                    <div className="text-[#D4AF37] group-hover:text-white transition-colors">
+                            <div key={index} className="text-center group">
+                                <div className="inline-flex items-center justify-center w-16 h-16 bg-[#D4AF37]/10 rounded-full mb-4 group-hover:bg-[#D4AF37]/20 transition-colors">
+                                    <div className="text-[#D4AF37]">
                                         {info.icon}
                                     </div>
                                 </div>
-                                <h3 className="font-serif text-xl text-[#2C1810] font-semibold mb-2 tracking-wide">
+                                <h3 className="font-serif text-lg font-semibold text-[#2C1810] mb-2">
                                     {info.title}
                                 </h3>
-                                <p className="font-sans text-xs text-gray-500 mb-3 uppercase tracking-wider">
+                                <p className="text-xs text-gray-500 mb-2">
                                     {info.subtitle}
                                 </p>
                                 {info.link ? (
                                     <a
                                         href={info.link}
-                                        className="font-sans text-sm text-[#D4AF37] hover:text-[#b8941f] transition-colors font-medium"
+                                        className="text-sm text-gray-700 hover:text-[#D4AF37] transition-colors break-all"
                                     >
                                         {info.detail}
                                     </a>
                                 ) : (
-                                    <p className="font-sans text-sm text-gray-700 font-medium">
+                                    <p className="text-sm text-gray-700 break-all">
                                         {info.detail}
                                     </p>
                                 )}

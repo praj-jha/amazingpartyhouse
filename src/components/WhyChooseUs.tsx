@@ -75,6 +75,21 @@ const WhyChooseUs = () => {
                                 </li>
                             </ul>
                         </div>
+
+                        {/* CTA Button */}
+                        <div className="mt-8">
+                            <a
+                                href="https://calendar.app.google/3GTWW3UurwXyiyeo7"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="inline-flex items-center gap-2 px-8 py-4 bg-[#D4AF37] text-[#2C1810] font-serif font-semibold tracking-wider rounded-lg shadow-lg hover:shadow-xl hover:bg-[#E5C158] transition-all duration-300 hover:-translate-y-1"
+                            >
+                                <span>Schedule a Call</span>
+                                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                </svg>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

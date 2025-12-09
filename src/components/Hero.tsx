@@ -43,10 +43,27 @@ const Hero = () => {
                     <p className="font-sans text-xs sm:text-sm md:text-base font-light tracking-[0.25em] uppercase text-white/80 max-w-3xl mx-auto drop-shadow-md animate-fadeInUp">
                         The Finest Events Worldwide
                     </p>
+
+                    {/* CTA Button */}
+                    <div className="mt-8 md:mt-10 animate-fadeInUp">
+                        <a
+                            href="https://calendar.app.google/3GTWW3UurwXyiyeo7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block group relative overflow-hidden"
+                        >
+                            <div className="absolute inset-0 bg-gradient-to-r from-[#D4AF37] via-[#E5C158] to-[#D4AF37] bg-[length:200%_100%] animate-shimmer"></div>
+                            <div className="relative px-8 py-4 md:px-10 md:py-5 bg-[#D4AF37] border-2 border-white/20 backdrop-blur-sm transition-all duration-300 group-hover:bg-transparent">
+                                <span className="font-serif text-sm md:text-base tracking-[0.2em] uppercase text-[#2C1810] font-semibold group-hover:text-white transition-colors duration-300">
+                                    Schedule a Call
+                                </span>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            {/* CSS for zoom out animation */}
+            {/* CSS for animations */}
             <style>{`
                 @keyframes zoomOut {
                     0% {
@@ -58,6 +75,17 @@ const Hero = () => {
                 }
                 .animate-zoomOut {
                     animation: zoomOut 20s ease-out infinite alternate;
+                }
+                @keyframes shimmer {
+                    0% {
+                        background-position: -200% 0;
+                    }
+                    100% {
+                        background-position: 200% 0;
+                    }
+                }
+                .animate-shimmer {
+                    animation: shimmer 3s linear infinite;
                 }
             `}</style>
         </section>

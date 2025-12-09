@@ -215,8 +215,8 @@ const Testimonials = () => {
                                 key={index}
                                 onClick={() => goToTestimonial(index)}
                                 className={`transition-all duration-300 rounded-full ${index === currentIndex
-                                        ? 'w-12 h-3 bg-[#D4AF37]'
-                                        : 'w-3 h-3 bg-gray-300 hover:bg-[#D4AF37]/50'
+                                    ? 'w-12 h-3 bg-[#D4AF37]'
+                                    : 'w-3 h-3 bg-gray-300 hover:bg-[#D4AF37]/50'
                                     }`}
                                 aria-label={`Go to testimonial ${index + 1}`}
                             />
@@ -289,8 +289,19 @@ const Testimonials = () => {
                     </p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                         <a
+                            href="https://calendar.app.google/3GTWW3UurwXyiyeo7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center gap-2 bg-[#D4AF37] hover:bg-[#E5C158] text-[#2C1810] font-sans font-semibold px-8 py-4 rounded-lg tracking-wider uppercase transition-all duration-300 shadow-lg hover:shadow-xl text-sm hover:scale-105"
+                        >
+                            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                            <span>Schedule a Call</span>
+                        </a>
+                        <a
                             href="/contact"
-                            className="inline-block bg-[#D4AF37] hover:bg-[#b8941f] text-white font-sans font-semibold px-8 py-4 rounded-lg tracking-wider uppercase transition-all duration-300 shadow-lg hover:shadow-xl text-sm"
+                            className="inline-block bg-transparent border-2 border-[#D4AF37] hover:bg-[#D4AF37] text-[#D4AF37] hover:text-[#2C1810] font-sans font-semibold px-8 py-4 rounded-lg tracking-wider uppercase transition-all duration-300 shadow-lg hover:shadow-xl text-sm"
                         >
                             Plan Your Event
                         </a>

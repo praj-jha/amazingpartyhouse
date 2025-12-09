@@ -67,6 +67,16 @@ const Footer = () => {
                                 hello@amazingpartyhouse.com
                             </a>
                         </div>
+
+                        {/* Schedule a Call CTA */}
+                        <a
+                            href="https://calendar.app.google/3GTWW3UurwXyiyeo7"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="block mt-6 text-center bg-[#D4AF37] hover:bg-[#E5C158] text-[#2C1810] font-sans font-semibold px-6 py-3 rounded-lg tracking-wide uppercase transition-all duration-300 shadow-md hover:shadow-lg text-xs hover:scale-105"
+                        >
+                            Schedule a Call
+                        </a>
                     </div>
                 </div>
             </div>
