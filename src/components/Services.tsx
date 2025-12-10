@@ -92,11 +92,10 @@ const Services = () => {
                 {/* Header */}
                 <div className="text-center mb-16">
                     <h3 className="font-cursive text-4xl md:text-5xl text-[#D4AF37] italic mb-3">
-                        Our Services
+                        Professional Event Planning Services
                     </h3>
                     <h2 className="font-serif text-xl md:text-2xl text-white/90 font-light tracking-wide max-w-3xl mx-auto">
-                        From intimate gatherings to grand celebrations, we bring your vision to life with
-                        professional expertise and personalized attention
+                        From intimate gatherings to grand celebrations across Florida - Corporate events, beach weddings, birthday parties, and all special occasions with expert planning and flawless execution
                     </h2>
                     <div className="w-24 h-1 bg-[#D4AF37] mx-auto mt-6"></div>
                 </div>

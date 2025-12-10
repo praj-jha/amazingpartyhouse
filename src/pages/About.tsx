@@ -1,8 +1,16 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 import { FaAward, FaHeart, FaUsers, FaStar, FaCheckCircle, FaPalette } from 'react-icons/fa';
 
 const About = () => {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "AboutPage",
+        "name": "About Amazing Party House",
+        "description": "Learn about Florida's premier party planning and wedding organizing company with 3+ years of excellence",
+        "url": "https://amazingpartyhouse.com/about"
+    };
     const values = [
         {
             icon: <FaAward className="text-4xl" />,
@@ -45,6 +53,13 @@ const About = () => {
 
     return (
         <div className="min-h-screen bg-white">
+            <SEO
+                title="About Us - Premier Event Planners Florida"
+                description="Amazing Party House - 3+ years of excellence in party planning & wedding organizing across Florida. 500+ successful events, 450+ happy clients. Expert corporate event planners, beach wedding specialists & celebration organizers serving Miami, Orlando, Tampa & all Florida."
+                keywords="about amazing party house, florida event planners, professional party organizers florida, wedding planning company florida, experienced event planners, top party planning companies florida, reliable event organizers, best wedding planners florida, corporate event specialists, celebration planners florida"
+                canonicalUrl="https://amazingpartyhouse.com/about"
+                schema={schema}
+            />
             <Navbar />
 
             {/* Hero Section */}

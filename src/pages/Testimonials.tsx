@@ -1,9 +1,17 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 import { FaStar, FaQuoteLeft, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 
 const Testimonials = () => {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "ReviewPage",
+        "name": "Amazing Party House Client Reviews",
+        "description": "Read reviews from 450+ happy clients who trusted Amazing Party House with their Florida celebrations",
+        "url": "https://amazingpartyhouse.com/testimonials"
+    };
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const testimonials = [
@@ -83,6 +91,13 @@ const Testimonials = () => {
 
     return (
         <div className="min-h-screen bg-white">
+            <SEO
+                title="Client Reviews & Testimonials - Top Rated Party Planners Florida"
+                description="Read 450+ five-star reviews from satisfied clients! Amazing Party House - Florida's most trusted party planning & wedding organizing company. See why we're rated #1 for corporate events, beach weddings, birthdays & celebrations across FL."
+                keywords="party planner reviews florida, wedding organizer testimonials florida, event planning reviews, best party planners florida reviews, top rated wedding organizers, client testimonials florida, event planner ratings, corporate event reviews florida, celebration planner feedback"
+                canonicalUrl="https://amazingpartyhouse.com/testimonials"
+                schema={schema}
+            />
             <Navbar />
 
             {/* Hero Section */}

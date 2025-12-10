@@ -18,7 +18,7 @@ const Footer = () => {
                 {/* Important Links */}
                 <div>
                     <h3 className="font-serif text-lg font-semibold text-[#2C1810] mb-6 tracking-wide border-b-2 border-[#D4AF37] pb-2 inline-block">
-                        IMPORTANT LINKS
+                        QUICK LINKS
                     </h3>
                     <ul className="space-y-3 mt-6">
                         <li>
@@ -28,12 +28,22 @@ const Footer = () => {
                         </li>
                         <li>
                             <Link to="/about" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors flex items-center gap-2">
-                                <span className="text-[#D4AF37]">›</span> About
+                                <span className="text-[#D4AF37]">›</span> About Us
                             </Link>
                         </li>
                         <li>
-                            <Link to="/testimonials" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors flex items-center gap-2">
-                                <span className="text-[#D4AF37]">›</span> Testimonials
+                            <Link to="/services/wedding-planning" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                                <span className="text-[#D4AF37]">›</span> Wedding Planning
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/services/corporate-events" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                                <span className="text-[#D4AF37]">›</span> Corporate Events
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/services/birthday-parties" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors flex items-center gap-2">
+                                <span className="text-[#D4AF37]">›</span> Birthday Parties
                             </Link>
                         </li>
                         <li>
@@ -43,7 +53,7 @@ const Footer = () => {
                         </li>
                         <li>
                             <Link to="/contact" className="font-sans text-sm text-gray-700 hover:text-[#D4AF37] transition-colors flex items-center gap-2">
-                                <span className="text-[#D4AF37]">›</span> Contact
+                                <span className="text-[#D4AF37]">›</span> Contact Us
                             </Link>
                         </li>
                     </ul>

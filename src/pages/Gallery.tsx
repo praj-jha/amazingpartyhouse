@@ -1,7 +1,15 @@
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 
 const Gallery = () => {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "ImageGallery",
+        "name": "Amazing Party House Event Gallery",
+        "description": "View our portfolio of stunning weddings, corporate events, birthday parties and celebrations across Florida",
+        "url": "https://amazingpartyhouse.com/gallery"
+    };
     const images = [
         'https://images.unsplash.com/photo-1511578314322-379afb476865?w=600',
         'https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600',
@@ -16,6 +24,13 @@ const Gallery = () => {
 
     return (
         <div>
+            <SEO
+                title="Event Gallery - Amazing Parties & Weddings Portfolio Florida"
+                description="Explore Amazing Party House's stunning event portfolio! View our best beach weddings, corporate galas, birthday celebrations, and special events across Florida. Get inspired by 500+ successful celebrations. Miami, Orlando, Tampa & more."
+                keywords="florida event gallery, wedding photos florida, party planning portfolio, event decoration ideas florida, corporate event photos, beach wedding gallery florida, birthday party ideas, celebration photos florida, event inspiration, party decoration gallery"
+                canonicalUrl="https://amazingpartyhouse.com/gallery"
+                schema={schema}
+            />
             <Navbar />
             <main className="mt-24 min-h-screen bg-cream">
                 <div className="max-w-7xl mx-auto px-8 py-20">

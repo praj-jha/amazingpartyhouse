@@ -31,17 +31,17 @@ const Hero = () => {
                 {/* Premium Content */}
                 <div className="space-y-4 md:space-y-5">
                     <p className="font-serif text-xs sm:text-sm md:text-base font-light italic tracking-[0.3em] uppercase text-white/90 animate-fadeInDown drop-shadow-lg">
-                        Celebrating 3+ Years of Experience
+                        Florida's Premier Party & Wedding Planners - 3+ Years Excellence
                     </p>
                     <h1 className="font-serif text-sm sm:text-base md:text-xl lg:text-2xl font-extralight tracking-[0.35em] leading-tight mb-3 animate-fadeInUp drop-shadow-2xl uppercase">
-                        Discover the Art of
+                        Expert Event Planning Across Florida
                     </h1>
                     <h2 className="font-serif text-lg sm:text-xl md:text-3xl lg:text-4xl font-light tracking-[0.3em] text-[#D4AF37] [text-shadow:0_0_20px_rgba(212,175,55,0.4)] animate-fadeInUp uppercase">
-                        Presentation
+                        Unforgettable Celebrations
                     </h2>
                     <div className="h-px w-32 sm:w-40 md:w-48 mx-auto my-4 md:my-5 bg-linear-to-r from-transparent via-[#D4AF37] to-transparent opacity-60"></div>
                     <p className="font-sans text-xs sm:text-sm md:text-base font-light tracking-[0.25em] uppercase text-white/80 max-w-3xl mx-auto drop-shadow-md animate-fadeInUp">
-                        The Finest Events Worldwide
+                        Corporate Events • Beach Weddings • Birthday Parties • All Celebrations
                     </p>
 
                     {/* CTA Button */}

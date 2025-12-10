@@ -1,9 +1,17 @@
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaInstagram, FaPaperPlane } from 'react-icons/fa';
 
 const Contact = () => {
+    const schema = {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Amazing Party House",
+        "description": "Contact Florida's premier party planners and wedding organizers. Schedule your free consultation today!",
+        "url": "https://amazingpartyhouse.com/contact"
+    };
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -71,14 +79,21 @@ const Contact = () => {
         {
             icon: <FaClock className="text-2xl" />,
             title: "Business Hours",
-            detail: "Mon- Fri : 10 AM - 6 PM and Sat & Sun by Appointment",
+            detail: "Mon-Fri: 10 AM - 6 PM, Sat: 11 AM - 5 PM, Sun: Closed",
             link: null,
-            subtitle: "By appointment on weekends"
+            subtitle: "Weekend hours available"
         }
     ];
 
     return (
         <div className="min-h-screen bg-white">
+            <SEO
+                title="Contact Us - Get Free Quote | Party & Wedding Planners Florida"
+                description="Contact Amazing Party House for your Florida event planning needs. Free consultations available! Corporate events, beach weddings, birthday parties & all celebrations. Call +1-407-921-6454 or schedule online. Serving Miami, Orlando, Tampa & all FL."
+                keywords="contact party planners florida, wedding organizer consultation florida, event planning quote florida, book party planner florida, schedule event consultation, florida party planning services, wedding planner contact florida, corporate event quote, party planning inquiry florida"
+                canonicalUrl="https://amazingpartyhouse.com/contact"
+                schema={schema}
+            />
             <Navbar />
 
             {/* Hero Section */}
