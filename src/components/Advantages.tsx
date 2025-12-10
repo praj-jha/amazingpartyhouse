@@ -1,10 +1,4 @@
-import { Link } from 'react-router-dom';
-import { FiPhone, FiEdit3 } from 'react-icons/fi';
-
 const Advantages = () => {
-    const phoneDisplay = '+1 407-921-6454';
-    const phoneHref = '+1 407-921-6454'; // TODO: replace with real business number
-
     return (
         // <section className="bg-white py-16 px-6">
         //     <div className="max-w-6xl mx-auto">
